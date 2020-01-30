@@ -14,7 +14,6 @@ html{
 }
 
 body{
-	background-color: black;
 	color:$texto;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -60,6 +59,13 @@ body{
 	.portada{
 		min-height: 49rem;
 	}
+	.welcome{
+	padding-top:80px;
+	padding-bottom:80px;
+	background-image: linear-gradient(rgba(0,0,0,.4),rgba(6,131,197,1)),url("../img/BIENVENIDA.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
 }
 footer{
 	font-size: 13px;
@@ -76,23 +82,42 @@ footer{
 	filter: alpha(opacity=50);
 }
 .welcome{
-	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../img/nyc.jpg");
+	padding-top:150px;
+	padding-bottom:150px;
+	background-image: linear-gradient(rgba(0,0,0,.4),rgba(6,131,197,1)),url("../img/BIENVENIDA.png");
 	background-size: cover;
 	background-attachment: fixed;
 }
 .who_is_evd{
-	background-color: rgb(232,232,232);;
+	background-image: linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.8)),url("../img/2471622.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
-.who_is_goonlife{
-	background-color: rgb(0,0,0);;
-	background-size: cover;
+.who_is_evd img{
+	transform: rotate(-10deg);
 }
+.who_is_goonlife{
+	background-image: linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url("../img/825.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+.go_now{
+	background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url("../img/16548.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .bg-t{
-	background-color: rgba(255,255,255,.8);
-	transition: all 1s ease;
+	color: white;
+	background-color: transparent;
+	transition: all 1.5s ease;
 }
 .bg-inverse{
 	background-color: rgba(255,255,255,1);
+	transition: all 1.5s ease;
+}
+.training{
+	background-image: url("../img/ENTRENAMIENTO.png");
+	background-size: cover;
+	background-attachment: fixed;
 }

@@ -9,7 +9,6 @@ html {
   font-size: 18px; }
 
 body {
-  background-color: black;
   color: #3f3f3f;
   font-family: 'Open Sans', sans-serif; }
 
@@ -44,7 +43,15 @@ body {
     border-right: 2px solid #858488 !important; }
 
   .portada {
-    min-height: 49rem; } }
+    min-height: 49rem; }
+
+  .welcome {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(#0683c5)), url("../img/BIENVENIDA.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), #0683c5), url("../img/BIENVENIDA.png");
+    background-size: cover;
+    background-attachment: fixed; } }
 footer {
   font-size: 13px; }
 
@@ -60,26 +67,49 @@ footer {
   filter: alpha(opacity=50); }
 
 .welcome {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../img/nyc.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/nyc.jpg");
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(#0683c5)), url("../img/BIENVENIDA.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), #0683c5), url("../img/BIENVENIDA.png");
   background-size: cover;
   background-attachment: fixed; }
 
 .who_is_evd {
-  background-color: #e8e8e8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url("../img/2471622.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/2471622.jpg");
   background-size: cover;
   background-attachment: fixed; }
 
+.who_is_evd img {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg); }
+
 .who_is_goonlife {
-  background-color: black;
-  background-size: cover; }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url("../img/825.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/825.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+
+.go_now {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../img/16548.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/16548.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
 
 .bg-t {
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease; }
+  color: white;
+  background-color: transparent;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease; }
 
 .bg-inverse {
-  background-color: white; }
+  background-color: white;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease; }
+
+.training {
+  background-image: url("../img/ENTRENAMIENTO.png");
+  background-size: cover;
+  background-attachment: fixed; }
 
 /*# sourceMappingURL=styles.css.map */

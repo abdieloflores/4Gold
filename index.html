@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="img/Logo_EVD.ico" />
 
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -16,10 +18,11 @@
   </head>
   <body>
     <!--Navbar-->
-    <nav id="menu"class="navbar navbar-light navbar-expand-md bg-t fixed-top">
+    <nav id="menu"class="navbar navbar-dark bg-t navbar-expand-md fixed-top">
       <div class="container d-flex">
         <!-- El logo siempre va en la clase navbar brand-->
-         <a href="index.html" class="navbar-brand"><img src="img/EVD.png" alt="Logo EVD"class="logo"></a>
+         <a id="img1" href="index.html" class="navbar-brand d-none"><img src="img/EVD.png" alt="Logo EVD"class="logo"></a>
+         <a id="img2" href="index.html" class="navbar-brand d-block"><img src="img/EVD2.png" alt="Logo EVD"class="logo"></a>
 
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-principal"aria-controls="menu-principal" aria-expanded="false" aria-label="Menu Principal">
          <span class="navbar-toggler-icon"></span>
@@ -44,16 +47,13 @@
     </nav>
 
     <!--Welcome-->
-    <section id="Welcome" class="container-fluid welcome text-white bg-black">
-      <div class="container d-flex portada text-center ">
-        <div class="row align-content-center">
-          <div class="col-12 px-0">
-            <h1 class="display-3 pb-5" style="margin-top: 80px;letter-spacing: .1rem;">BIENVENIDO</h1>
-          </div> 
-          <div class="col-12 mx-auto pb-5 pb-md-0 px-0">
-            <p class=" h5 font-weight-normal">En este espacio vamos a equiparte con todas las herramientas necesarias para tener éxito en tu negocio, encontrarás desde un área de recursos, hasta el área de capacitaciones y salas de juntas en línea.<br><br>
+    <section id="Welcome" class="container-fluid welcome text-white">
+      <div class="container text-center">
+        <div id="welcome_letters"class="m-auto">
+            <h2 class="p-3 display-1 font-weight-bold d-none d-md-block" style="letter-spacing: 1rem;">BIENVENIDO</h2>
+            <h2 class="p-3 font-weight-bold d-block d-md-none">BIENVENIDO</h2>
+            <p class="font-weight-normal p-md-3">En este espacio vamos a equiparte con todas las herramientas necesarias para tener éxito en tu negocio, encontrarás desde un área de recursos, hasta el área de capacitaciones y salas de juntas en línea.<br><br>
             Mantente conectado a EVD a través de esta página y avanza dentro de tu negocio para crear algo más profundo que riqueza, <strong>LEGADO.</strong></p>
-          </div>
         </div>
       </div>
     </section>
@@ -62,13 +62,13 @@
     <section id="Who_is_EVD" class="container-fluid who_is_evd">
       <div class="container d-flex portada text-center">
         <div class="row align-content-center">
-          <div class="col-12 col-md-6 bg-dark">
+          <div class="col-12 col-md-6 d-flex align-content-center pt-5 pt-md-0">
 
-           <!--IMAGEN AQUI-->
+            <img class="img-fluid m-auto"src="img/EVD.png" alt="EVD" >
 
           </div>
           <div class="col-12 col-md-6">
-            <h2 class="font-weight-bold pb-3 mt-5 mt-md-0">¿Qué es EVD?</h2>
+            <h2 class="font-weight-bold pt-5 pb-3 mt-5 mt-md-0">¿Qué es EVD?</h2>
             <p class="font-weight-normal mb-0">Somos un equipo internacional de emprendedores que buscamos despertar y compartir la vida de Diamante.<br><br>
 
             En esta Industria (MLM) la vida de Diamante es un sueño anhelado y un rango buscado por miles
@@ -87,8 +87,8 @@
     <section id="Who_is_GoOnLife" class="container-fluid who_is_goonlife">
       <div class="container d-flex portada text-center text-white">
         <div class="row align-content-center">
-          <div class="col-12 col-md-6">
-            <h2 class="font-weight-bold pb-3 mt-5 mt-md-0">¿Qué es <span class="font-italic" style="color: #80AF1E;">Go On Life</span>?</h2>
+          <div class="col-12 col-md-6 order-1 order-md-0">
+            <h2 class="font-weight-bold pb-3 mt-5 mt-md-0">¿Qué es GO ON LIFE?</h2>
             <p class="font-weight-normal mb-0 pb-5">Es una compañía Mexicana de productos saludables y servicios financieros creada como una plataforma de emprendimiento.<br><br>
 
             GO ON LIFE ofrece suplementos altamente efectivos y ganadores para el cuidado de la salud, mejora del rendimiento, elevación del sistema inmune, entre otros beneficios.<br><br>
@@ -97,9 +97,9 @@
 
             GO ON LIFE es nuestro Ferrari dentro de los negocios para ir del punto A al punto B a una velocidad sumamente alta.</p>
           </div>
-          <div class="col-12 col-md-6 bg-dark">
+          <div class="col-12 col-md-6 d-flex align-content-center pt-5 pt-md-0 pb-md-5">
 
-           <!--IMAGEN AQUI-->
+            <img class="img-fluid m-auto"src="img/LOGOGOL.png" alt="EVD" style="max-width: 250px;">
 
           </div>
         </div>
@@ -107,42 +107,66 @@
     </section>
 
     <!--Go Now-->
-    <section id="Go-now" class="container-fluid who_is_evd text-center">
+    <section id="Go-now" class="container-fluid go_now text-center text-white">
       <div class="container">
-        <h2 class="font-weight-bold py-5"style=";font-size: 4rem;">Mis Primeras<br> <span style="font-family: 'Mr Dafoe',cursive;font-size: 7rem;width: 90%">72 Horas</span></h2>
+        <h2 class="font-weight-bold py-5"style=";font-size: 4rem;">Mis Primeras<br> <span class="font-weight-normal" style="font-family: 'Mr Dafoe',cursive;font-size: 7rem;">72 Horas</span></h2>
         <h3 class="text-center pb-5">Para arrancar tu vehículo es necesario dar marcha, para ello, estos son algunos pasos a seguir en <strong>tus primeras 72 horas.</strong></h3>
         <p class="font-italic text-right text-md-center">“Empezar rápido y con firmeza atrae a la gente como un imán”
             <br><span class="font-weight-bold">-Dexter Yager</span></p>
         <div class="row py-5 m-auto"style="max-width: 20rem;">
           <div class="col-12 p-4">
-              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;">1</p>
+              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;color: #3f3f3f;">1</p>
               <p>Llena una solicitud de Asociado y obtén tu código internacional.</p>
           </div>
           <div class="col-12">
-              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;">2</p>
+              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;color: #3f3f3f;">2</p>
               <p>Realiza tu primer pedido, realiza tu pago en alguna sucursal o punto proporcionado por la compañía.</p>
           </div>
           <div class="col-12">
-              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;">3</p>
+              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;color: #3f3f3f;">3</p>
               <p>Consume tus productos y crea una historia.</p>
           </div>
           <div class="col-12">
-              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;">4</p>
+              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;color: #3f3f3f;">4</p>
               <p>Crea tu proyecto 50. Haz una lista de al menos 50 prospectos con nombre, teléfono y relación.</p>
           </div>
           <div class="col-12">
-              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;">5</p>
+              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;color: #3f3f3f;">5</p>
               <p>Aprende el plan de negocios.</p>
           </div>
           <div class="col-12">
-              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;">6</p>
+              <p class="px-4 py-3 bg-primary d-inline-block font-weight-bold"style="border-radius: 50%;color: #3f3f3f;">6</p>
               <p>Organiza la inauguración de tu negocio en café/casa.</p>
           </div>
         </div>
       </div>
     </section>
-    <footer class="container-fluid bg-black">
-      <div class="container text-center text-white">
+
+     <!--Training-->
+    <section id="Training" class="container-fluid training">
+      <div class="container d-flex portada text-center text-white">
+        <div class="row align-content-center">
+          <div class="col-12 col-md-6 order-1 order-md-0">
+            <h2 class="font-weight-bold pb-3 mt-5 mt-md-0">¿Qué es GO ON LIFE?</h2>
+            <p class="font-weight-normal mb-0 pb-5">Es una compañía Mexicana de productos saludables y servicios financieros creada como una plataforma de emprendimiento.<br><br>
+
+            GO ON LIFE ofrece suplementos altamente efectivos y ganadores para el cuidado de la salud, mejora del rendimiento, elevación del sistema inmune, entre otros beneficios.<br><br>
+
+            GO ON LIFE  ha incluido en sus productos / servicios un increíble plan de compensación que permite a sus miembros obtener un ingreso simplemente compartiendo sus esta plataforma con otros y generando un ingreso residual a través de la creación de una red de socios y clientes.<br><br>
+
+            GO ON LIFE es nuestro Ferrari dentro de los negocios para ir del punto A al punto B a una velocidad sumamente alta.</p>
+          </div>
+          <div class="col-12 col-md-6 d-flex align-content-center pt-5 pt-md-0 pb-md-5">
+
+            <img class="img-fluid m-auto"src="img/LOGOGOL.png" alt="EVD" style="max-width: 250px;">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid bg-white">
+      <div class="container text-center text-dark">
         <p class="pt-3 pb-2">Copyright © 2019. Todos los derechos reservados.</p>
       </div>
     </footer>
@@ -152,15 +176,29 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
     <!--Scroll detection -->
     <script>
       $(window).scroll(function() {
         if ($("#menu").offset().top > 80) {
+            $("#menu").removeClass("bg-t");
+            $("#menu").removeClass("navbar-dark");
+            $("#img2").removeClass("d-block");
+            $("#img1").removeClass("d-none");
             $("#menu").addClass("bg-inverse");
+            $("#menu").addClass("navbar-light");
+            $("#img1").addClass("d-block");
+            $("#img2").addClass("d-none");
         } else {
             $("#menu").removeClass("bg-inverse");
+            $("#menu").removeClass("navbar-light");
+            $("#menu").addClass("bg-t");
+            $("#menu").addClass("navbar-dark");
+            $("#img1").removeClass("d-block");
+            $("#img1").addClass("d-none");
+            $("#img2").removeClass("d-none");
         }
       });
-</script>
+    </script>
   </body>
 </html>
